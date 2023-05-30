@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 # Welcome to the E-commerce Project By MERN-STACK
 ### This is a full-functional (Work in progress now)  ecommerce web application that is developed by using MERN (MongoDB, Express.js, React.js, and Node.js).
 
 In this repository I will keep adding the best practices we should follow in a MERN project. Also for better UX I am using MUI for the UI.
+=======
+# Welcome to the Sabil Project
+#### This is a full-functional (Work in progress now)  ecommerce web application that is developed by using MERN (MongoDB, Express.js, React.js, and Node.js).
+
+## Features:
+1. In this repository I will keep adding the best practices we should follow in a MERN project. Also for better UX I am using MUI for the UI.
+2. It can be run in two ways. One is using Docker, another way is to run manually.
+3. Dynamically control the access of any component or API for any user or role via the admin control panel.
+4. I will keep adding the best practices we should follow in a MERN project. Also for better UX I am using MUI for the UI.
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67
 
 Below are the sample of a product-shop and list page:
 
@@ -84,6 +95,7 @@ The client and server both are up and running and we should see the following sc
   npm run db:seed
   npm run db:migrate
   ```
+<<<<<<< HEAD
 
   You should see the following output:
   ![Product List Page](./docs/images/appserver-lsla.png)
@@ -148,3 +160,71 @@ npm run db:migrate
 
 You should be able to see the username and password in the `/server/setup/users.json` file.
 
+=======
+
+  You should see the following output:
+  ![Product List Page](./docs/images/appserver-lsla.png)
+
+  ![Product List Page](./docs/images/appserver-db-seed-users.png)
+
+  ![Product List Page](./docs/images/appserver-db-seed-products.png)
+
+  You should be now login to the application and see the products list.
+
+### Visual Studio Code
+
+#### Prerequisites
+
+- Node.js : To run npm packages
+- MongoDB : As a database for the application
+
+##### Steps
+
+- To run via vscode, we should run the server and client side projects separately, and also make sure mongodb is up and running.
+- Create a `.env` file inside of the `server` directory. Add the below entries or change accordingly. You can follow the `.env.sample` file to see the format.
+
+  ```
+  DB_HOST=localhost
+  DB_PORT=27017
+  DB_NAME=sabil
+  JWT_SECRET=secret
+  JWT_EXPIRES_IN=3600
+  PORT=8008
+  IS_MONGODB_CLOUD_URL=false
+  MONGODB_CLOUD_URL=mongodb+srv:// <USER >: <PASSWORD >@cluster0.abcd.mongodb.net/myFirstDatabase?retryWrites=true
+  ```
+
+#### Server commands
+We assume we run the MongoDB in the docker container.
+```sh
+cd server
+npm i
+npm run db:up
+npm start
+```
+
+#### Client commands
+
+```sh
+cd client
+nvm use --lts
+npm i
+npm start
+```
+
+## Data seeding
+
+To seed the database, we need to run the following commands in the docker container. You can run these commands in the terminal as well if you are running the server and client outside of the docker environment.
+I assume we are running appserver in the docker container.
+
+```sh
+docker exec -it appserver bash
+npm run db:seed
+npm run db:migrate
+```
+
+You should be able to see the username and password in the `/server/setup/users.json` file.
+
+## 🔗 Important Links ❗
+- 🔴 Project Live : [Sabil](https://sabil.vercel.app)
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67

@@ -2,6 +2,7 @@ import { UserService } from '../user/user.service';
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { JwtPayload } from './jwt-payload.interface';
+<<<<<<< HEAD
 import * as mongoose from "mongoose";
 import {PermissionService} from "../permission/permission.service";
 
@@ -14,6 +15,22 @@ export class AuthService {
   async createToken(user: JwtPayload) {
     // const user: JwtPayload = { email: 'test@email.com' };
     console.log("createToken user----",user);
+=======
+import * as mongoose from 'mongoose';
+import { PermissionService } from '../permission/permission.service';
+
+@Injectable()
+export class AuthService {
+  constructor(
+    private readonly jwtService: JwtService,
+    private readonly userService: UserService,
+    private readonly permissionService: PermissionService,
+  ) {}
+
+  async createToken(user: JwtPayload) {
+    // const user: JwtPayload = { email: 'test@email.com' };
+    console.log('createToken user----', user);
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67
     const accessToken = this.jwtService.sign(user);
     return {
       expiresIn: 100000,

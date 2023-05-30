@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "singleQuote": true,
     "printWidth": 180,
     "editor.formatOnSave": true,
@@ -12,3 +13,8 @@
     "semi": true,
     "arrowParens": "always"
 }
+=======
+  "singleQuote": true,
+  "trailingComma": "all"
+}
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67

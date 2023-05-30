@@ -4,6 +4,10 @@ import { Container } from '@mui/material';
 // components
 import Page from '../components/Page';
 // sections
+<<<<<<< HEAD
+=======
+// eslint-disable-next-line import/extensions,import/no-unresolved
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67
 import { ComponentHero, ComponentOther, ComponentFoundation, ComponentMUI } from '../sections/overview';
 
 // ----------------------------------------------------------------------

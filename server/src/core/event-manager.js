@@ -7,7 +7,10 @@ class EventManager {
     }
   }
 
+<<<<<<< HEAD
   // eslint-disable-next-line class-methods-use-this
+=======
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67
   getInstance() {
     return EventManager.instance;
   }

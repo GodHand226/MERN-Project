@@ -10,6 +10,16 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+<<<<<<< HEAD
     "incremental": true
+=======
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+>>>>>>> 694c3486e2b879d5ee63700a96d785550c955b67
   }
 }
