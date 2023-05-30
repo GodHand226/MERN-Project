@@ -1,4 +1,4 @@
-# Welcome to the Sabil Project By MERN-STACK
+# Welcome to the E-commerce Project By MERN-STACK
 ### This is a full-functional (Work in progress now)  ecommerce web application that is developed by using MERN (MongoDB, Express.js, React.js, and Node.js).
 
 In this repository I will keep adding the best practices we should follow in a MERN project. Also for better UX I am using MUI for the UI.
@@ -148,5 +148,3 @@ npm run db:migrate
 
 You should be able to see the username and password in the `/server/setup/users.json` file.
 
-## 🔗 Important Links ❗
-- 🔴 Project Live : [Sabil](https://sabil.vercel.app)
